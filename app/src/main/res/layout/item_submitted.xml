@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="2dp"
+    app:cardBackgroundColor="#02ABF9"
+    app:cardElevation="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/submitted_item"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txt_topic_sub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TOPIC"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/relative_date_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txt_topic_sub"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:id="@+id/date_from_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DD/MM/YYYY"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/to_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" TO "
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@+id/date_from_sub"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/date_to_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DD/MM/YYYY"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@+id/to_sub"
+                android:layout_marginLeft="8dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_sem_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/relative_date_sub"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/txt_sem_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sem :"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ans_sem_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/txt_sem_sub"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/admin_recycler_layout1"
+    android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="30dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_requested_item1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardBackgroundColor="#02ABF9"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txt_id1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="17CE001"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/relative_sem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txt_id1"
+                android:layout_marginTop="6dp">
+                <TextView
+                    android:id="@+id/txt_sem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sem :"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_sem_ans1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_toRightOf="@+id/txt_sem1"
+                    android:layout_marginLeft="8dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/topic_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/relative_sem1"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:id="@+id/txt_topic1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Topic :"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+
+                    android:id="@+id/topic1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/txt_topic1"
+                    android:text="Participation_Topic"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

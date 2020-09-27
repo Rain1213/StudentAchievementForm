@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="fill"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.admin.requested.confirmMessageDelete"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#4863A0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/popup_r1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ARE YOU SURE YOU WANT TO DELETE/ARCHIVE THE FOLLOWING?"
+            android:gravity="center"
+            android:layout_margin="10sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:id="@+id/txt_deleteOrArchive"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/popup_r1"
+        android:gravity="center_horizontal"
+        android:id="@+id/popup_r2">
+        <TextView
+            android:id="@+id/popup_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID :"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/popup_ans_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17CE006"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_toRightOf="@+id/popup_txt_id"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/popup_r2"
+        android:gravity="center_horizontal"
+        android:id="@+id/popup_r3">
+        <TextView
+            android:id="@+id/popup_txt_sem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEMESTER :"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/popup_ans_sem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/popup_txt_sem"
+            android:gravity="center_horizontal"
+            android:text="8"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/popup_r3"
+        android:gravity="center_horizontal"
+        android:id="@+id/popup_r4">
+        <TextView
+            android:id="@+id/popup_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOPIC :"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/popup_ans_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic Name"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_toRightOf="@+id/popup_txt_name"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/popup_r5"
+        app:layout_constraintTop_toBottomOf="@id/popup_r4">
+
+        <Button
+            android:id="@+id/click_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="#C11B17"
+            android:layout_margin="10dp"
+            android:text="YES, PROCEED"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/popup_r6"
+        app:layout_constraintTop_toBottomOf="@id/popup_r5">
+
+         <Button
+            android:id="@+id/click_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="#306754"
+            android:layout_margin="10dp"
+            android:text="NO, TAKE ME BACK"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

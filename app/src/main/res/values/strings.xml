@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Student Achievement Form</string>
+    <string name="student">STUDENT</string>
+    <string name="google_drive">Please create a Google Drive Folder with name using ur id (e.g 17CExxx_DD/MM/YY) to include certificates, photographs as proof of your participation and/or a report/paper and share the google drive link here.</string>
+    <string name="bracket">(</string>
+</resources>

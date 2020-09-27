@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.student.Achievement_Form"
+    android:background="#02ABF9"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="40dp"
+        tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="Achievement Form"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.github.captain_miao.optroundcardview.OptRoundCardView
+        android:id="@+id/optRoundCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:optRoundCardBackgroundColor="#ffffff"
+        app:optRoundCardCornerRadius="60dp"
+        app:optRoundCardLeftBottomCorner="false"
+        app:optRoundCardLeftTopCorner="true"
+        app:optRoundCardRightBottomCorner="false"
+        app:optRoundCardRightTopCorner="true"
+        android:layout_marginTop="120dp" >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:fillViewport="true">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="133dp"
+                        android:layout_marginHorizontal="30dp"
+                        app:cardBackgroundColor="#a1c4fd"
+                        app:cardCornerRadius="12dp"
+                        app:layout_constraintBottom_toTopOf="@+id/card_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.733"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <EditText
+
+                                android:id="@+id/edt_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:editable="false"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_id"
+                                />
+
+                            <TextView
+                                android:id="@+id/txt_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="30dp"
+                                android:text="Student ID"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toTopOf="@+id/edt_id"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.159"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="133dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="#a1c4fd"
+                        app:cardCornerRadius="12dp"
+                        app:layout_constraintBottom_toTopOf="@+id/card_sem"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_id"
+                        app:layout_constraintVertical_bias="0.6">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/edt_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+                            <TextView
+                                android:id="@+id/txt_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="30dp"
+                                android:text="Student Name"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toTopOf="@+id/edt_name"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.159"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_sem"
+                        android:layout_width="match_parent"
+                        android:layout_height="133dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="#a1c4fd"
+                        app:cardCornerRadius="12dp"
+                        app:layout_constraintBottom_toTopOf="@+id/card_activity"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_name"
+                        app:layout_constraintVertical_bias="0.6">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/edt_sem"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_sem"
+                                android:inputType="number"
+                                android:imeOptions="actionDone"
+                                />
+
+                            <TextView
+                                android:id="@+id/txt_sem"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="30dp"
+                                android:text="Student Semester"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toTopOf="@+id/edt_sem"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.159"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="#a1c4fd"
+                        app:cardCornerRadius="12dp"
+                        app:layout_constraintBottom_toTopOf="@+id/card_event_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_sem"
+                        app:layout_constraintVertical_bias="0.2">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <Spinner
+                                android:id="@+id/spinner_activity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_activity" />
+
+                            <TextView
+                                android:id="@+id/txt_activity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="30dp"
+                                android:text="What kind of event did you participate in?"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toTopOf="@+id/spinner_activity"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.159"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_event_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="133dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="#a1c4fd"
+                        app:cardCornerRadius="12dp"
+                        app:layout_constraintBottom_toTopOf="@+id/card_date_from"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_activity"
+                        app:layout_constraintVertical_bias="0.2">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/edt_event_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:inputType="text"
+                                android:imeOptions="actionDone"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_event_name" />
+
+                            <TextView
+                                android:id="@+id/txt_event_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="30dp"
+                                android:text="Name of Event with Venue"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toTopOf="@+id/edt_event_name"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_date_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="173dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="#a1c4fd"
+                        app:cardCornerRadius="12dp"
+                        app:layout_constraintBottom_toTopOf="@+id/card_date_to"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_event_name"
+                        app:layout_constraintVertical_bias="0.2">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/edt_date_from"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                android:editable="false"
+                                android:text="DD/MM/YY"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/txt_date_from"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_date_from" />
+
+
+                            <TextView
+                                android:id="@+id/txt_date_from"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="30dp"
+                                android:text="Date of Event(From)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toTopOf="@+id/edt_date_from"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_date_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="133dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="#a1c4fd"
+                        app:cardCornerRadius="12dp"
+                        app:layout_constraintBottom_toTopOf="@+id/card_scholarship_charusat"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_date_from"
+                        app:layout_constraintVertical_bias="0.2">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/edt_date_to"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                android:editable="false"
+                                android:text="DD/MM/YY"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_date_to" />
+
+                            <TextView
+                                android:id="@+id/txt_date_to"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="30dp"
+                                android:text="Date of Event(To)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toTopOf="@+id/edt_date_to"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_scholarship_charusat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="#a1c4fd"
+                        app:cardCornerRadius="12dp"
+                        app:layout_constraintBottom_toTopOf="@+id/card_scholarship_external"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_date_to"
+                        app:layout_constraintVertical_bias="0.2">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/txt_scholarship_charusat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="30dp"
+                                android:text="Amount of Scholarship offered by CHARUSAT"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toTopOf="@+id/edt_scholarship_charusat"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <EditText
+                                android:id="@+id/edt_scholarship_charusat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="16sp"
+                                android:textColor="#FFFFFF"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_scholarship_charusat"
+                                android:inputType="number"
+                                />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_scholarship_external"
+                        android:layout_width="match_parent"
+                        android:layout_height="153dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="#a1c4fd"
+                        app:cardCornerRadius="12dp"
+                        app:layout_constraintBottom_toTopOf="@+id/card_certificate"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_scholarship_charusat"
+                        app:layout_constraintVertical_bias="0.2">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_scholarship_external"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="30dp"
+                                android:text="Amount of Scholarship offered by External Agency"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toTopOf="@+id/edt_scholarship_external"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                            <EditText
+                                android:id="@+id/edt_scholarship_external"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="16sp"
+                                android:textColor="#FFFFFF"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_scholarship_external"
+                                android:inputType="number"
+                                />
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_certificate"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="#a1c4fd"
+                        app:cardCornerRadius="12dp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_scholarship_external"
+                        app:layout_constraintVertical_bias="0.2">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/txt_certificate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="30dp"
+                                android:text="@string/google_drive"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toTopOf="@+id/edt_certificate"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <EditText
+                                android:id="@+id/edt_certificate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="16sp"
+                                android:textColor="#FFFFFF"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_certificate"
+                                android:inputType="text"
+                                android:imeOptions="actionDone"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/card_certificate"
+                        android:layout_marginBottom="60dp">
+
+                        <Button
+                            android:id="@+id/btn_submit"
+                            android:layout_marginTop="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="30dp"
+                            android:layout_marginBottom="30dp"
+                            android:text="Submit"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="@font/aclonica"
+                            android:background="@drawable/submit_button"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
