@@ -77,6 +77,6 @@ form’.
 ### **APPROVED FORMS**
 If you swipe right an item and accept it, the item will be transferred to the recycler view contains all approved forms. This data is stored only to be accessed at the time of actually providing the attendance leniency. A feature of live search is provided at the top. The admin can easily search for a particular id number, student semester or the type of event/achievement the student has participated in. This makes sorting much easier.
 
-<img align="center" alt="approvedForm" width="30%" src="https://github.com/Rain1213/StudentAchievementForm/blob/master/screenshots/11.JPG?raw=true" />
-<img align="center" alt="liveSearch" width="30%" src="https://github.com/Rain1213/StudentAchievementForm/blob/master/screenshots/11.JPG?raw=true" />
+<img align="center" alt="approvedForm" width="30%" src="https://github.com/Rain1213/StudentAchievementForm/blob/master/screenshots/12.JPG?raw=true" />
+<img align="center" alt="liveSearch" width="30%" src="https://github.com/Rain1213/StudentAchievementForm/blob/master/screenshots/13.JPG?raw=true" />
 <br/><br/>
